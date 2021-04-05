@@ -1,0 +1,55 @@
+@media only screen and (max-width:560px){
+    
+    .header{
+        padding: 20px;
+    }
+
+    .title-room{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:390px){
+
+    .intro-inner{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .intro-text h6{
+        width: 100%;
+    }
+
+    .settings-btn{
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .settings-pop{
+        bottom: 0;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .icon-hero{
+        position: fixed;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+@media only screen and (max-width:390px){
+    .game-history{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:650px){
+
+    .join-info{
+        padding: 20px;
+    }
+}

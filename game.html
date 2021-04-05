@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Rock Paper - Classic Rock Paper Scissors Multiplayer">
+        <meta name="description" content="Play rock paper scissors with you friend online!!">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://rockpaper.ml/">
+        <meta property="og:title" content="Rock Paper - Classic Rock Paper Scissors Multiplayer">
+        <meta property="og:description" content="Play rock paper scissors with you friend online!!">
+        <meta property="og:image" content="src/assets/images/banner.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="src/assets/images/banner.png">
+        <meta property="twitter:url" content="http://rockpaper.ml/">
+        <meta property="twitter:title" content="Rock Paper - Classic Rock Paper Scissors Multiplayer">
+        <meta property="twitter:description" content="Play rock paper scissors with you friend online!!">
+        <meta property="twitter:image" content="src/assets/images/banner.png">
+
+        <link rel="icon" href="src/assets/images/fav.png" sizes="16x16" type="image/png">
+
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/responsive.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--FONT POPPINS - WIGHT[200-600](Google Fonts)-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body class="unselectable">
+
+        <div class="header">
+            <div>
+                <h1 class="title-room">#</h1>
+            </div>
+            <div>
+                <button class="chat-button">History</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="players-wrap">
+                <div class="waiting-bar">
+                    <h1 class="load-text">😇 Waiting for your friend..</h1>
+                </div>
+            </div>
+        </div>
+        <div class="rendered-main">
+            <div class="center-flex">
+                <div class="botton-wrapper">
+                    <div class="pad-buttons">
+                        <div class="rock-render circle-bordered-button">
+                            <img src="src/assets/images/icons8-hand-rock-48.png" alt="">
+                        </div>
+                        <div class="paper-render circle-bordered-button">
+                            <img src="src/assets/images/icons8-hand-48.png" alt="">
+                        </div>
+                        <div class="scissor-render circle-bordered-button">
+                            <img src="src/assets/images/icons8-hand-scissors-48.png" alt="">
+                        </div>
+                    </div>
+                    <div class="button-text log-text">
+                        <h6>Now it's your turn! Choose Rock Paper or Scissors</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wait-div cflex">
+            <div class="wait-inner">
+                <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_rklapo5f.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;margin: 0 auto;"  loop autoplay></lottie-player>
+                <div class="join-info">
+                    <h2>Waiting for your friend..</h2>
+                    <h5>This game will start when your friend join this game. Share this code : <span style="color: dodgerblue;" class="rcode"></span></h5>
+                </div>
+            </div>            
+        </div>
+
+        <div class="game-history style-bar">
+            <header class="sidebar-head">
+                <h1 class="history-title">Game History</h1>
+                <div class="close-div">
+                    <img src="src/assets/images/close-white-18dp.svg" height="20px" width="20px" alt="">
+                </div>
+            </header>
+            <div class="chat-area">
+                <div class="chatbox">
+                    <h6 class="chat-abs">🤚 Paper aginst ✊ Rock</h3>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--AUDIOS-->
+        <audio id="plus-audio" src="src/assets/audio/point-plus.mp3"></audio>
+        <audio id="oh-no-audio" src="src/assets/audio/oh-no.mp3"></audio>
+        <audio id="epic-audio" src="src/assets/audio/victory.mp3"></audio>
+    </body>
+
+    <!--Scripts-->
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous"
+    ></script>
+
+    <!--Firebase scripts-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+    <!--Config-->
+    <script src="src/js/firebase/config.js"></script>
+
+    <!--In-built scripts-->
+    <script src="src/js/script/cookify.js"></script>
+    <script src="src/js/script/app.js"></script>
+    <script src="src/js/script/app.ui.js"></script>
+
+    <!--Game setting-->
+    <script src="src/js/firebase/game.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</html>

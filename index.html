@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Primary Meta Tags -->
+        <title>Rock Paper - Classic Rock Paper Scissors Multiplayer</title>
+        <meta name="title" content="Rock Paper - Classic Rock Paper Scissors Multiplayer">
+        <meta name="description" content="Play rock paper scissors with you friend online!!">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://rockpaper.ml/">
+        <meta property="og:title" content="Rock Paper - Classic Rock Paper Scissors Multiplayer">
+        <meta property="og:description" content="Play rock paper scissors with you friend online!!">
+        <meta property="og:image" content="src/assets/images/banner.png">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="src/assets/images/banner.png">
+        <meta property="twitter:url" content="http://rockpaper.ml/">
+        <meta property="twitter:title" content="Rock Paper - Classic Rock Paper Scissors Multiplayer">
+        <meta property="twitter:description" content="Play rock paper scissors with you friend online!!">
+        <meta property="twitter:image" content="src/assets/images/banner.png">
+
+        <link rel="icon" href="src/assets/images/fav.png" sizes="16x16" type="image/png">
+    
+        <link rel="stylesheet" href="src/css/style.css" type="text/css">
+        <link rel="stylesheet" href="src/css/responsive.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        
+
+    </head>
+    <body class="unselectable">
+
+        <div class="intro-wrap cflex">
+            <div class="intro-inner">
+                <div class="intro-head">
+                    <div class="intro-text">
+                        <img src="src/assets/images/icons8-hand-scissors-48.png" class="icon-hero" alt="">
+                        <h1>Rock Paper</h1>
+                        <h6>Play the classic rock paper scissors with your friends</h6>
+                    </div>
+                    <div class="button-border settings-btn cflex np">
+                        <img src="src/assets/images/settings-24px.svg" class="np" alt="">
+
+                        <div class="settings-pop">
+                            <h3>Your name</h3>
+                            <h4>Enter your alias! Be incognito while you are playing 🎅</h4>
+                            <div class="input-name">
+                                <input type="text" id="myname" oninput="setAl();" placeholder="Sandwich">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-buttons">
+                    <div class="button-border intro-input">
+                        <input type="text" class="JoinCode" oninput="checkvisibile()" placeholder="Your friend's code">
+                        <div class="go-join cflex">
+                            🡲
+                        </div>
+                    </div>
+                    <div class="button-border host-btn open-cpop">
+                        <h5>Start a game</h5>
+                    </div>
+                    <div class="warning">
+                        <h6 class="warning-label"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="create-inner cr-in">
+            <div>
+                <h1>Create game</h1>
+                <p class="create-abs">Set the win score befor you go! The first to react this score wins!</p>
+            </div>
+            <div>
+                <select class="points-max">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                  </select>
+            </div>
+            <div class="button-border host-btn create-room">
+                <h5>Start the game</h5>
+            </div>
+            <a class="cancel-create">cancel</a>
+        </div>
+        <div class="create-dialog-wrap cflex">
+
+        </div>
+    </body>
+
+    <!--Scripts-->
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.js" 
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
+        crossorigin="anonymous"
+    ></script>
+
+    <!--Firebase scripts-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+    <!--Config-->
+    <script src="src/js/firebase/config.js"></script>
+
+    <!--In-built scripts-->
+    <script src="src/js/script/cookify.js"></script>
+    <script src="src/js/script/app.js"></script>
+    <script src="src/js/script/app.ui.js"></script>
+
+    <!--Game setting-->
+    <script src="src/js/firebase/create-room.js"></script>
+</html>
