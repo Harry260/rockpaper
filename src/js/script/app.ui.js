@@ -28,7 +28,7 @@ if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
 }
 
 $(".go-join").on("click", function(){
-    var code = $(this).val();
+    var code = $(".JoinCode").val();
     join(code);
 })
 
