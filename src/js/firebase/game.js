@@ -22,6 +22,7 @@ if(gameid){
 
     title_r.html("#" + gameid)
     $(".rcode").text(gameid)
+    document.title = "RockPaper #" + gameid;
 }
 else{
     window.location.replace("index.html");
@@ -305,6 +306,7 @@ function makeMeJoin(no, op){
         }
     }else if(no === 3){
         var secPL = "another_" + playername;
+        playername = "another_" + playername;
         var pl ={
             [secPL]: {
                 score: 0,
