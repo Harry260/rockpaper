@@ -16,7 +16,6 @@ $(".settings-btn").on("click", function(){
 
 $(".open-cpop").on("click", function(){
     $(".create-inner").fadeIn();
-    $('.create-inner').draggable();
 })
 
 $(".cancel-create").on("click", function(){
